@@ -1,0 +1,11 @@
+Feature: Assignment 1 - Selenium Python and Behave BDD
+  As an automation tester
+  I want to use Behave BDD to fill out user forms
+  So that I meet the Assignment 1 requirements
+
+  Scenario: Automate form submission with Selenium and Behave
+    Given I open the test automation practice website
+    When I enter my name "Arif Mondal"
+    And I enter my email "mondalarif1531@gmail.com"
+    And I enter my phone number "7439689610"
+    Then the details should be entered successfully

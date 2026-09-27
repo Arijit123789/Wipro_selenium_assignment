@@ -1,0 +1,9 @@
+Feature: Assignment 3 - Selenium Page Object Model in Python Behave Framework
+  As a tester
+  I want to use the Page Object Model design pattern with Behave
+  So that my automation code is modular, clean, and maintainable
+
+  Scenario: Submit form using Page Object Model structure
+    Given I navigate to the test automation practice website using POM
+    When I fill out the form with name "Arif", email "mondalarif1531@gmail.com", and phone "7439689610" using POM
+    Then the form submission via POM should complete successfully

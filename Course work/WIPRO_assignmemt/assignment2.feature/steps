@@ -1,0 +1,17 @@
+Feature: Assignment 2 - Test Data Driven Automation in Python Behave
+  As a tester
+  I want to use data-driven scenarios in Behave
+  So that I can test the form with multiple sets of data
+
+  Scenario Outline: Submit form with multiple test data sets
+    Given I open the test automation practice website for data-driven testing
+    When I enter the username "<Name>"
+    And I enter the user email "<Email>"
+    And I enter the user phone "<Phone>"
+    Then the test data should be processed successfully
+
+    Examples:
+      | Name       | Email                     | Phone      |
+      | Arif Mondal| mondalarif1531@gmail.com  | 7439689610 |
+      | Rahul Roy  | rahul.roy@gmail.com       | 9876543210 |
+      | Priya Sen  | priya.sen@yahoo.com       | 9123456789 |

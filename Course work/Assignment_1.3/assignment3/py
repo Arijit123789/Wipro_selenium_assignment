@@ -1,0 +1,26 @@
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+
+# Open Chrome
+driver = webdriver.Chrome()
+
+# Open website
+driver.get("https://testautomationpractice.blogspot.com/")
+
+# Maximize browser
+driver.maximize_window()
+
+# CSS Selector - locate Name field
+name = driver.find_element(By.CSS_SELECTOR, "#name")
+name.send_keys("Arghadeep")
+
+print("CSS Selector: Name field found")
+
+# CSS Wildcard Selector
+# Find elements whose ID starts with "name"
+elements = driver.find_elements(By.CSS_SELECTOR, "[id^='name']")
+
+print("CSS Wildcard Selector - elements found:", len(elements))
+
+# Keep browser open
+input("Press Enter to close the browser...")
